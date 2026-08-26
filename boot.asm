@@ -1,3 +1,4 @@
+section .text
 [bits 16]
 [org 0x7c00]
 
@@ -9,6 +10,7 @@ start:
     mov ss, ax
     mov sp, 0x7c00
 
+    ; Load kernel from sector 2 to 0x10000
     mov bx, 0x1000
     mov es, bx
     xor bx, bx
