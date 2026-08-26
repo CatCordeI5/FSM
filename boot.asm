@@ -1,6 +1,7 @@
-section .text
 [bits 16]
 [org 0x7c00]
+
+section .text
 
 start:
     cli
